@@ -158,3 +158,49 @@ Compilation failed
 /home/runner/workspace/list.c:83:(.text+0x139): undefined reference to `popCurrent'
 collect2: error: ld returned 1 exit status
 f627c4a
+Thu Mar 26 07:48:02 PM UTC 2026: 
+ list.c | 13 ++++++++++---
+ 1 file changed, 10 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:62:5: error: ‘nodo’ undeclared (first use in this function)
+   62 |     nodo = createNode(data);
+      |     ^~~~
+list.c:62:5: note: each undeclared identifier is reported only once for each function it appears in
+list.c: In function ‘popCurrent’:
+list.c:87:10: error: variable or field ‘dato’ declared void
+   87 |     void dato = list->current->data;
+      |          ^~~~
+list.c:87:17: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+   87 |     void dato = list->current->data;
+      |                 ^~~~
+list.c:92:10: error: ‘lista’ undeclared (first use in this function); did you mean ‘list’?
+   92 |     free(lista->current);
+      |          ^~~~~
+      |          list
+list.c:94:5: error: unknown type name ‘retunr’
+   94 |     retunr dato
+      |     ^~~~~~
+list.c:95:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘}’ token
+   95 | }
+      | ^
+test.c:448:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  448 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:468:1: error: expected declaration or statement at end of input
+  468 | }
+      | ^
+list.c:87:10: error: unused variable ‘dato’ [-Werror=unused-variable]
+   87 |     void dato = list->current->data;
+      |          ^~~~
+test.c:469: error: control reaches end of non-void function [-Werror=return-type]
+test.c: At top level:
+test.c:448:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  448 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+list.c:97:6: error: ‘cleanList’ defined but not used [-Werror=unused-function]
+   97 | void cleanList(List * list) {
+      |      ^~~~~~~~~
+cc1: all warnings being treated as errors
+b0e19b9
