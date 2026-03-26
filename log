@@ -294,3 +294,22 @@ list.c:95:1: error: control reaches end of non-void function [-Werror=return-typ
       | ^
 cc1: all warnings being treated as errors
 141675d
+Thu Mar 26 07:51:59 PM UTC 2026: 
+ list.c | 3 +++
+ 1 file changed, 3 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:90:5: error: expected ‘(’ before ‘void’
+   90 |     void* dato = list->current->data;
+      |     ^~~~
+      |     (
+list.c:97:13: error: ‘dato’ undeclared (first use in this function)
+   97 |     return *dato;
+      |             ^~~~
+list.c:97:13: note: each undeclared identifier is reported only once for each function it appears in
+list.c:98:1: error: control reaches end of non-void function [-Werror=return-type]
+   98 | }
+      | ^
+cc1: all warnings being treated as errors
+43ce8af
