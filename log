@@ -100,3 +100,22 @@ list.c:84:1: error: control reaches end of non-void function [-Werror=return-typ
       | ^
 cc1: all warnings being treated as errors
 7ad3e81
+Thu Mar 26 07:38:03 PM UTC 2026: 
+ list.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:62:5: error: ‘nodo’ undeclared (first use in this function)
+   62 |     nodo = createNode(data);
+      |     ^~~~
+list.c:62:5: note: each undeclared identifier is reported only once for each function it appears in
+list.c:63:5: error: ‘head’ undeclared (first use in this function)
+   63 |     head->prev = nodo;
+      |     ^~~~
+list.c: In function ‘popCurrent’:
+list.c:88:1: error: control reaches end of non-void function [-Werror=return-type]
+   88 | }
+      | ^
+cc1: all warnings being treated as errors
+28d5839
