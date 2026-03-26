@@ -85,3 +85,18 @@ list.c:84:1: error: control reaches end of non-void function [-Werror=return-typ
       | ^
 cc1: all warnings being treated as errors
 56f3546
+Thu Mar 26 07:27:29 PM UTC 2026: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘lastList’:
+list.c:52:1: error: control reaches end of non-void function [-Werror=return-type]
+   52 | }
+      | ^
+list.c: In function ‘popCurrent’:
+list.c:84:1: error: control reaches end of non-void function [-Werror=return-type]
+   84 | }
+      | ^
+cc1: all warnings being treated as errors
+7ad3e81
