@@ -250,3 +250,19 @@ list.c:94:12: error: returning ‘int’ from a function with return type ‘voi
    94 |     return dato;
       |            ^~~~
 dd87745
+Thu Mar 26 07:49:21 PM UTC 2026: 
+ list.c | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:87:10: error: variable or field ‘dato’ declared void
+   87 |     void dato = list->current->data;
+      |          ^~~~
+list.c:87:17: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+   87 |     void dato = list->current->data;
+      |                 ^~~~
+list.c:94:12: error: returning ‘int’ from a function with return type ‘void *’ makes pointer from integer without a cast [-Wint-conversion]
+   94 |     return dato;
+      |            ^~~~
+1c0556c
