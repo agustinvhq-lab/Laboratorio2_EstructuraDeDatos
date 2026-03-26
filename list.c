@@ -90,7 +90,8 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) {
 
-    void dato = list->current->data;
+    void * dato = (void*)malloc(sizeof(void));
+    dato = list->current->data;
 
     list->current->prev->next = list->current->next;
     list->current->next->prev = list->current->prev;
