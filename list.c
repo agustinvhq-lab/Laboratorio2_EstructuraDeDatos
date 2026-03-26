@@ -91,7 +91,7 @@ void * popCurrent(List * list) {
 
     free(lista->current);
 
-    retunr dato
+    return dato;
 }
 
 void cleanList(List * list) {

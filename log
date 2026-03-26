@@ -204,3 +204,28 @@ list.c:97:6: error: ‘cleanList’ defined but not used [-Werror=unused-functio
       |      ^~~~~~~~~
 cc1: all warnings being treated as errors
 b0e19b9
+Thu Mar 26 07:48:29 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:62:5: error: ‘nodo’ undeclared (first use in this function)
+   62 |     nodo = createNode(data);
+      |     ^~~~
+list.c:62:5: note: each undeclared identifier is reported only once for each function it appears in
+list.c: In function ‘popCurrent’:
+list.c:87:10: error: variable or field ‘dato’ declared void
+   87 |     void dato = list->current->data;
+      |          ^~~~
+list.c:87:17: error: initialization of ‘int’ from ‘void *’ makes integer from pointer without a cast [-Wint-conversion]
+   87 |     void dato = list->current->data;
+      |                 ^~~~
+list.c:92:10: error: ‘lista’ undeclared (first use in this function); did you mean ‘list’?
+   92 |     free(lista->current);
+      |          ^~~~~
+      |          list
+list.c:94:12: error: returning ‘int’ from a function with return type ‘void *’ makes pointer from integer without a cast [-Wint-conversion]
+   94 |     return dato;
+      |            ^~~~
+e903ecc
