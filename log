@@ -144,3 +144,17 @@ list.c:62:5: error: ‘nodo’ undeclared (first use in this function)
       |     ^~~~
 list.c:62:5: note: each undeclared identifier is reported only once for each function it appears in
 6bddf65
+Thu Mar 26 07:40:36 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+/nix/store/mkvc0lnnpmi604rqsjdlv1pmhr638nbd-binutils-2.44/bin/ld: /tmp/cc592iwH.o: in function `test_popcurrent':
+/home/runner/workspace/test.c:367:(.text+0x9b3): undefined reference to `popCurrent'
+/nix/store/mkvc0lnnpmi604rqsjdlv1pmhr638nbd-binutils-2.44/bin/ld: /home/runner/workspace/test.c:392:(.text+0xa16): undefined reference to `popCurrent'
+/nix/store/mkvc0lnnpmi604rqsjdlv1pmhr638nbd-binutils-2.44/bin/ld: /home/runner/workspace/test.c:419:(.text+0xa7f): undefined reference to `popCurrent'
+/nix/store/mkvc0lnnpmi604rqsjdlv1pmhr638nbd-binutils-2.44/bin/ld: /tmp/cc592iwH.o: in function `popFront':
+/home/runner/workspace/list.c:78:(.text+0x128): undefined reference to `popCurrent'
+/nix/store/mkvc0lnnpmi604rqsjdlv1pmhr638nbd-binutils-2.44/bin/ld: /tmp/cc592iwH.o: in function `popBack':
+/home/runner/workspace/list.c:83:(.text+0x139): undefined reference to `popCurrent'
+collect2: error: ld returned 1 exit status
+f627c4a
