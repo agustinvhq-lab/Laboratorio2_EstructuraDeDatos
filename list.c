@@ -44,7 +44,6 @@ List * createList() {
 //   - La segunda función retorna el dato del nodo a continuación del current y actualiza el current para que apunte a ese nodo.
 
 void * firstList(List * list) {
-    
     return NULL;
 }
 
@@ -95,8 +94,7 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) {
 
-    void * dato = (void*)malloc(sizeof(void));
-    dato = list->current->data;
+    void * dato = list->current->data;
 
     list->current->prev->next = list->current->next;
     list->current->next->prev = list->current->prev;
