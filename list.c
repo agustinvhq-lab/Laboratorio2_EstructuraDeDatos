@@ -65,9 +65,9 @@ void pushFront(List * list, void * data) {
     head = nodo;
 }
 
-void pushBack(List * list, void * data) {
+//void pushBack(List * list, void * data) {
     
-}
+//}
 
 void pushCurrent(List * list, void * data) {
     
@@ -83,9 +83,9 @@ void * popBack(List * list) {
     return popCurrent(list);
 }
 
-void * popCurrent(List * list) {
+// void * popCurrent(List * list) {
     
-}
+//}
 
 void cleanList(List * list) {
     while (list->head != NULL) {
