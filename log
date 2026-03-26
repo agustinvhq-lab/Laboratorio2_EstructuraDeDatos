@@ -25,3 +25,30 @@ list.c:76:1: error: control reaches end of non-void function [-Werror=return-typ
       | ^
 cc1: all warnings being treated as errors
 dd64942
+Thu Mar 26 07:18:27 PM UTC 2026: 
+ list.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:43:1: error: control reaches end of non-void function [-Werror=return-type]
+   43 | }
+      | ^
+list.c: In function ‘nextList’:
+list.c:47:1: error: control reaches end of non-void function [-Werror=return-type]
+   47 | }
+      | ^
+list.c: In function ‘lastList’:
+list.c:51:1: error: control reaches end of non-void function [-Werror=return-type]
+   51 | }
+      | ^
+list.c: In function ‘prevList’:
+list.c:55:1: error: control reaches end of non-void function [-Werror=return-type]
+   55 | }
+      | ^
+list.c: In function ‘popCurrent’:
+list.c:81:1: error: control reaches end of non-void function [-Werror=return-type]
+   81 | }
+      | ^
+cc1: all warnings being treated as errors
+8e21daa
