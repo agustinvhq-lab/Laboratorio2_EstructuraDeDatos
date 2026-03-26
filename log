@@ -404,3 +404,24 @@ ed3315a
 Thu Mar 26 11:17:17 PM UTC 2026: 
  tests:  0|0
 d2bff56
+Thu Mar 26 11:40:09 PM UTC 2026: 
+ list.c | 17 ++++++++++++++---
+ 1 file changed, 14 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:100:9: error: ‘head’ undeclared (first use in this function)
+  100 |         head = list->current->next;
+      |         ^~~~
+list.c:100:9: note: each undeclared identifier is reported only once for each function it appears in
+list.c:109:9: error: ‘tail’ undeclared (first use in this function)
+  109 |         tail = list->current->prev;
+      |         ^~~~
+list.c:115:12: error: ‘dato’ undeclared (first use in this function)
+  115 |     return dato;
+      |            ^~~~
+list.c:116:1: error: control reaches end of non-void function [-Werror=return-type]
+  116 | }
+      | ^
+cc1: all warnings being treated as errors
+4e1b652
