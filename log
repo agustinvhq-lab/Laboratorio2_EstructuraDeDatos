@@ -530,3 +530,12 @@ list.c:53:29: error: suggest parentheses around comparison in operand of ‘|’
       |                             ^
 cc1: all warnings being treated as errors
 443dc9e
+Sat Mar 28 01:12:32 AM UTC 2026: 
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:53:29: error: suggest parentheses around comparison in operand of ‘|’ [-Werror=parentheses]
+   53 |     if (list->current->next == NULL | list->current == NULL) return NULL;
+      |                             ^
+cc1: all warnings being treated as errors
+ceb43b9
