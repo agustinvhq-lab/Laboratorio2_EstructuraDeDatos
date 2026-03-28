@@ -509,3 +509,8 @@ list.c:50:16: error: ‘dato’ undeclared (first use in this function)
 list.c:50:16: note: each undeclared identifier is reported only once for each function it appears in
 cc1: all warnings being treated as errors
 ce15816
+Sat Mar 28 01:07:44 AM UTC 2026: 
+ list.c | 6 ++----
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+ tests:  0|0
+42d4b71
