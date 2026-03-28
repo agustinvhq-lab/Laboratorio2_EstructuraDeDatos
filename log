@@ -549,3 +549,14 @@ Sat Mar 28 01:13:32 AM UTC 2026:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 397c2c7
+Sat Mar 28 01:15:28 AM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:53:29: error: suggest parentheses around comparison in operand of ‘|’ [-Werror=parentheses]
+   53 |     if (list->current->next == NULL | list->current == NULL) return NULL;
+      |                             ^
+cc1: all warnings being treated as errors
+c639476
