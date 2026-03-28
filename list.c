@@ -104,6 +104,7 @@ void pushCurrent(List * list, void * data) {
         Node* aux = createNode(data);
         list->current->next = aux;
         aux->prev = list->current;
+        list->tail = aux;
     }
 
     else
