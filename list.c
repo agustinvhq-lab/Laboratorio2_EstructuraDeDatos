@@ -45,15 +45,13 @@ List * createList() {
 
 void * firstList(List * list) {
     list->current = list->head;
-    void* dato;
-    dato = list->current->data;
+    void* dato = list->current->data;
     return dato;
 }
 
 void * nextList(List * list) {
     list->current = list->current->next;
-    void* dato;
-    dato = list->current->data;
+    void* dato = list->current->data;
     return dato;
 }
 
