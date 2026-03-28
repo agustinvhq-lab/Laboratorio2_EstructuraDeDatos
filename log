@@ -581,3 +581,15 @@ Sat Mar 28 01:26:27 AM UTC 2026:
  tests:  9|3
 total_score: 30/60
 19445b1
+Sat Mar 28 01:37:28 AM UTC 2026: 
+ list.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:86:21: error: implicit declaration of function ‘crateNode’; did you mean ‘createNode’? [-Wimplicit-function-declaration]
+   86 |         Node* aux = crateNode(data);
+      |                     ^~~~~~~~~
+      |                     createNode
+list.c:86:21: error: initialization of ‘Node *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+5672f48
