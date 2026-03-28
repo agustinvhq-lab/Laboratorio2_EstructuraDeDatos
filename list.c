@@ -83,7 +83,7 @@ void pushFront(List * list, void * data) {
 
     else
     {
-        Node* aux = crateNode(data);
+        Node* aux = createNode(data);
         aux->next = list->head;
         list->head->prev = aux;
         list->head = aux;
