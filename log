@@ -488,3 +488,24 @@ Sat Mar 28 01:00:14 AM UTC 2026:
  1 file changed, 2 insertions(+), 4 deletions(-)
  tests:  0|0
 5c260da
+Sat Mar 28 01:05:49 AM UTC 2026: 
+ list.c | 2 ++
+ 1 file changed, 2 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:49:9: error: expected expression before ‘void’
+   49 |         void* dato = list->current->data;
+      |         ^~~~
+list.c:48:5: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   48 |     if (list->head != NULL)
+      |     ^~
+list.c:50:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   50 |         return dato;
+      |         ^~~~~~
+list.c:50:16: error: ‘dato’ undeclared (first use in this function)
+   50 |         return dato;
+      |                ^~~~
+list.c:50:16: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+ce15816
